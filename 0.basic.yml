@@ -2,4 +2,7 @@
 - hosts: all
   tasks:
   - name: Querying for Telnet Install
+    yum: pkg=telnet state=present
+    
+  - name: Querying for Telnet Install
     yum: pkg=nmap state=present
